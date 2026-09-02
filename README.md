@@ -9,9 +9,9 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/ShreyaasSachdeva?tab=repositories">systems</a>
+  <a href="https://github.com/shreyaas5?tab=repositories">systems</a>
   ·
-  <a href="https://github.com/ShreyaasSachdeva?tab=stars">signals</a>
+  <a href="https://github.com/shreyaas5?tab=stars">signals</a>
 </p>
 
 ---
@@ -76,32 +76,16 @@ SPACE + ASTRONOMY      █████████████████░░
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ShreyaasSachdeva/ShreyaasSachdeva/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ShreyaasSachdeva/ShreyaasSachdeva/output/github-contribution-grid-snake.svg" />
-    <img alt="Animated contribution snake" src="https://raw.githubusercontent.com/ShreyaasSachdeva/ShreyaasSachdeva/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shreyaas5/shreyaas5/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/shreyaas5/shreyaas5/output/github-contribution-grid-snake.svg" />
+    <img alt="Animated contribution snake" src="https://raw.githubusercontent.com/shreyaas5/shreyaas5/output/github-contribution-grid-snake-dark.svg" />
   </picture>
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=ShreyaasSachdeva&theme=dark&hide_border=true&background=050505&ring=7DFCC3&fire=FF5A3D&currStreakLabel=7DFCC3" alt="GitHub streak stats" />
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=shreyaas5&theme=dark&hide_border=true&background=050505&ring=7DFCC3&fire=FF5A3D&currStreakLabel=7DFCC3" alt="GitHub streak stats" />
 </p>
 
 <p align="center">
   <sub>profile assets regenerate automatically through GitHub Actions</sub>
 </p>
-
-
-<!--
-**shreyaas5/shreyaas5** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
