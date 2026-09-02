@@ -72,7 +72,7 @@
     <rect x="0" y="146" width="456" height="112" rx="10" class="panel"/>
     <text x="22" y="182" font-size="15" font-weight="700" class="text">Profile Rule</text>
     <text x="22" y="216" font-size="14" class="muted">No fake meters. No random claims. Show what exists, then upgrade it.</text>
-    <text x="22" y="244" font-size="13" class="orange">last asset build: 2026-09-02 17:05 UTC</text>
+    <text x="22" y="244" font-size="13" class="orange">last asset build: 2026-09-02 17:06 UTC</text>
   </g>
 
   <g filter="url(#glow)" class="float">
