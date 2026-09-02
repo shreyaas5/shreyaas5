@@ -71,17 +71,10 @@
     <text x="22" y="138" font-size="15" font-weight="700" class="text">ABILITY</text>
     <text x="22" y="166" font-size="14" class="muted">turns curiosity into small shipped experiments</text>
 
-<<<<<<< HEAD
-    <rect x="0" y="146" width="456" height="112" rx="10" class="panel"/>
-    <text x="22" y="182" font-size="15" font-weight="700" class="text">Profile Rule</text>
-    <text x="22" y="216" font-size="14" class="muted">No fake meters. No random claims. Show what exists, then upgrade it.</text>
-    <text x="22" y="244" font-size="13" class="orange">last asset build: 2026-09-02 17:06 UTC</text>
-=======
     <rect x="0" y="216" width="430" height="96" rx="12" class="screen"/>
     <text x="22" y="250" font-size="15" font-weight="700" class="text">DEX NOTE</text>
     <text x="22" y="278" font-size="14" class="muted">No fake levels. No random domains. Real projects get the spotlight.</text>
-    <text x="22" y="302" font-size="13" class="orange">asset build: 2026-09-02 17:09 UTC</text>
->>>>>>> 36c5f1e (switch profile to github builderdex theme)
+    <text x="22" y="302" font-size="13" class="orange">asset build: 2026-09-02 17:10 UTC</text>
   </g>
 
   <g transform="translate(94 385)" class="float">
