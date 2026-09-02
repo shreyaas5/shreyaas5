@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="720" height="380" viewBox="0 0 720 380" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Engineering stack console</title>
+  <desc id="desc">A terminal-like SVG showing Shreyaas Sachdeva's engineering stack and build focus.</desc>
+  <defs>
+    <style>
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+      .cursor { animation: blink 1s steps(2, start) infinite; } .meter { animation: pulse 2.4s ease-in-out infinite; }
+      .line1 { animation: reveal1 7.5s steps(45) infinite; } .line2 { animation: reveal2 7.5s steps(46) infinite; } .line3 { animation: reveal3 7.5s steps(52) infinite; }
+      @keyframes blink { 0%,48% { opacity:1; } 49%,100% { opacity:0; } } @keyframes pulse { 0%,100% { opacity:.68; } 50% { opacity:1; } }
+      @keyframes reveal1 { 0%,8% { clip-path: inset(0 100% 0 0); } 30%,100% { clip-path: inset(0 0 0 0); } }
+      @keyframes reveal2 { 0%,34% { clip-path: inset(0 100% 0 0); } 56%,100% { clip-path: inset(0 0 0 0); } }
+      @keyframes reveal3 { 0%,60% { clip-path: inset(0 100% 0 0); } 86%,100% { clip-path: inset(0 0 0 0); } }
+    </style>
+  </defs>
+  <rect width="720" height="380" rx="18" fill="#080A09"/><rect x="22" y="22" width="676" height="336" rx="12" fill="#0C120F" stroke="#7DFCC3" stroke-opacity=".38"/>
+  <circle cx="50" cy="48" r="6" fill="#FF5A3D"/><circle cx="72" cy="48" r="6" fill="#FFCF5A"/><circle cx="94" cy="48" r="6" fill="#7DFCC3"/>
+  <g class="mono">
+    <text x="48" y="90" font-size="15" fill="#7DFCC3">$ ./launch_profile --callsign=shreyaas5 --mode=visual-overkill</text>
+    <text x="48" y="126" font-size="15" fill="#EFFFF6" class="line1">&gt; loading modules: python cpp js react actions</text>
+    <text x="48" y="158" font-size="15" fill="#EFFFF6" class="line2">&gt; target systems: agents, tools, simulations</text>
+    <text x="48" y="190" font-size="15" fill="#EFFFF6" class="line3">&gt; output preference: shipped demos over empty flex</text>
+    <text x="48" y="238" font-size="12" fill="#7C9B8D">BUILD PRESSURE</text><rect x="48" y="252" width="580" height="12" fill="#142B23" rx="6"/><rect x="48" y="252" width="498" height="12" fill="#7DFCC3" rx="6" class="meter"/>
+    <text x="48" y="304" font-size="12" fill="#7C9B8D">CURRENT STATE</text>
+    <text x="48" y="328" font-size="15" fill="#FFCF5A">online / curious / building / mildly dangerous to boring READMEs</text>
+    <rect x="630" y="309" width="13" height="23" fill="#7DFCC3" class="cursor"/>
+  </g>
+</svg>

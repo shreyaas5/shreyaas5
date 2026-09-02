@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="440" viewBox="0 0 1200 440" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Mission Control profile banner for Shreyaas Sachdeva</title>
+  <desc id="desc">Animated GitHub profile banner styled as a space mission control interface.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="440" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#020403"/><stop offset="0.42" stop-color="#07130F"/><stop offset="0.72" stop-color="#190D08"/><stop offset="1" stop-color="#020403"/>
+    </linearGradient>
+    <radialGradient id="core" cx="50%" cy="50%" r="50%">
+      <stop stop-color="#F7FFE2"/><stop offset="0.34" stop-color="#76F7BD"/><stop offset="0.72" stop-color="#17604D"/><stop offset="1" stop-color="#09231E"/>
+    </radialGradient>
+    <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#7DFCC3" stop-opacity="0"/><stop offset="0.5" stop-color="#7DFCC3" stop-opacity=".48"/><stop offset="1" stop-color="#7DFCC3" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M 34 0 L 0 0 0 34" fill="none" stroke="#B7F7D8" stroke-opacity=".075"/>
+    </pattern>
+    <filter id="hardGlow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+      .white { fill: #F4FFF8; } .green { fill: #7DFCC3; } .red { fill: #FF5A3D; } .gold { fill: #FFCF5A; } .muted { fill: #7EA390; }
+      .panel { fill: #06100C; stroke: #7DFCC3; stroke-opacity: .42; }
+      .thin { stroke: #7DFCC3; stroke-opacity: .35; }
+      .scan { animation: scan 5s linear infinite; }
+      .spin { transform-origin: 880px 218px; animation: spin 21s linear infinite; }
+      .spinFast { transform-origin: 880px 218px; animation: spin 9s linear infinite reverse; }
+      .spinSlow { transform-origin: 880px 218px; animation: spin 37s linear infinite; }
+      .blink { animation: blink 1.05s steps(2, start) infinite; }
+      .pulse { animation: pulse 2.2s ease-in-out infinite; }
+      .dash { stroke-dasharray: 8 12; animation: dash 18s linear infinite; }
+      .float { animation: float 7s ease-in-out infinite alternate; }
+      .type1 { animation: reveal1 8s steps(34) infinite; }
+      .type2 { animation: reveal2 8s steps(28) infinite; }
+      .type3 { animation: reveal3 8s steps(39) infinite; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes scan { from { transform: translateY(-460px); } to { transform: translateY(460px); } }
+      @keyframes blink { 0%, 48% { opacity: 1; } 49%, 100% { opacity: 0; } }
+      @keyframes pulse { 0%, 100% { opacity: .42; } 50% { opacity: 1; } }
+      @keyframes dash { to { stroke-dashoffset: -220; } }
+      @keyframes float { from { transform: translateY(-8px); } to { transform: translateY(8px); } }
+      @keyframes reveal1 { 0%, 8% { clip-path: inset(0 100% 0 0); } 25%, 100% { clip-path: inset(0 0 0 0); } }
+      @keyframes reveal2 { 0%, 30% { clip-path: inset(0 100% 0 0); } 48%, 100% { clip-path: inset(0 0 0 0); } }
+      @keyframes reveal3 { 0%, 52% { clip-path: inset(0 100% 0 0); } 78%, 100% { clip-path: inset(0 0 0 0); } }
+    </style>
+  </defs>
+  <rect width="1200" height="440" fill="url(#bg)"/>
+  <rect width="1200" height="440" fill="url(#grid)"/>
+  <rect class="scan" width="1200" height="122" fill="url(#sweep)" opacity=".5"/>
+  <path d="M-40 354 C198 254 346 398 522 282 C703 163 846 244 1240 106" stroke="#FF5A3D" stroke-opacity=".20" stroke-width="2"/>
+  <path d="M-60 84 C160 178 318 34 492 108 C690 192 802 348 1260 254" stroke="#7DFCC3" stroke-opacity=".16" stroke-width="2"/>
+  <path d="M0 405 H1200" stroke="#7DFCC3" stroke-opacity=".18"/>
+  <g class="mono">
+    <text x="52" y="54" font-size="13" letter-spacing="3" class="green">MISSION CONTROL // SHREYAAS5</text>
+    <text x="52" y="120" font-size="52" font-weight="900" class="white">SHREYAAS.SYS</text>
+    <text x="56" y="156" font-size="16" letter-spacing="2" class="gold">AUTONOMOUS INTELLIGENCE LAB</text>
+    <text x="56" y="190" font-size="18" class="white type1">&gt; initializing multi-agent runtime...</text>
+    <text x="56" y="222" font-size="18" class="white type2">&gt; locking onto orbit: systems</text>
+    <text x="56" y="254" font-size="18" class="white type3">&gt; objective: ship weird useful software</text>
+    <rect x="56" y="276" width="448" height="94" rx="10" class="panel"/>
+    <text x="78" y="310" font-size="15" class="green">CLASSIFIED BUILD CHANNEL</text>
+    <text x="78" y="338" font-size="14" class="muted">agents | devtools | simulations | automation</text>
+    <text x="78" y="362" font-size="14" class="muted">asset build: 2026-09-02 16:35 UTC</text>
+    <rect x="455" y="335" width="12" height="22" fill="#7DFCC3" class="blink"/>
+  </g>
+  <g class="mono" transform="translate(558 54)">
+    <rect width="210" height="316" rx="12" class="panel"/>
+    <text x="22" y="36" font-size="12" letter-spacing="2" class="green">TELEMETRY</text>
+    <text x="22" y="75" font-size="13" class="muted">AGENT CORE</text><rect x="22" y="88" width="164" height="10" fill="#142B23" rx="5"/><rect x="22" y="88" width="144" height="10" fill="#7DFCC3" rx="5" class="pulse"/>
+    <text x="22" y="125" font-size="13" class="muted">SYSTEM DESIGN</text><rect x="22" y="138" width="164" height="10" fill="#142B23" rx="5"/><rect x="22" y="138" width="126" height="10" fill="#FFCF5A" rx="5" class="pulse"/>
+    <text x="22" y="175" font-size="13" class="muted">ORBITAL IDEAS</text><rect x="22" y="188" width="164" height="10" fill="#142B23" rx="5"/><rect x="22" y="188" width="152" height="10" fill="#FF5A3D" rx="5" class="pulse"/>
+    <text x="22" y="236" font-size="12" class="green">SIGNALS</text>
+    <text x="22" y="260" font-size="13" class="white">01: online</text><text x="22" y="282" font-size="13" class="white">02: building</text><text x="22" y="304" font-size="13" class="white">03: unstable ideas welcome</text>
+  </g>
+  <g filter="url(#hardGlow)">
+    <circle cx="880" cy="218" r="58" fill="url(#core)" class="float"/>
+    <circle cx="880" cy="218" r="96" stroke="#7DFCC3" stroke-opacity=".35"/><circle cx="880" cy="218" r="134" stroke="#FFCF5A" stroke-opacity=".24"/><circle cx="880" cy="218" r="174" stroke="#FF5A3D" stroke-opacity=".18"/><circle cx="880" cy="218" r="205" stroke="#7DFCC3" stroke-opacity=".12" class="dash"/>
+    <g class="spin"><circle cx="976" cy="218" r="7" fill="#7DFCC3"/><path d="M988 218 h44" stroke="#7DFCC3" stroke-opacity=".6"/></g>
+    <g class="spinFast"><circle cx="880" cy="84" r="5" fill="#FFCF5A"/><circle cx="880" cy="352" r="4" fill="#FFCF5A"/></g>
+    <g class="spinSlow"><circle cx="705" cy="218" r="8" fill="#FF5A3D"/><circle cx="1055" cy="218" r="5" fill="#FF5A3D"/></g>
+  </g>
+  <g class="mono">
+    <line x1="880" y1="218" x2="1092" y2="118" class="thin"/><circle cx="1092" cy="118" r="5" fill="#7DFCC3" class="pulse"/><text x="1110" y="123" font-size="13" class="green">NODE AWAKE</text>
+    <line x1="880" y1="218" x2="1084" y2="306" class="thin"/><circle cx="1084" cy="306" r="5" fill="#FFCF5A" class="pulse"/><text x="1102" y="311" font-size="13" class="gold">SIGNAL LOCK</text>
+    <line x1="880" y1="218" x2="1008" y2="380" class="thin"/><circle cx="1008" cy="380" r="5" fill="#FF5A3D" class="pulse"/><text x="1026" y="385" font-size="13" class="red">BURN READY</text>
+  </g>
+</svg>

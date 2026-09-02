@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="720" height="380" viewBox="0 0 720 380" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Animated mission radar</title>
+  <desc id="desc">A radar interface showing active engineering signals.</desc>
+  <defs>
+    <radialGradient id="fade" cx="50%" cy="50%" r="50%"><stop stop-color="#7DFCC3" stop-opacity=".26"/><stop offset=".58" stop-color="#7DFCC3" stop-opacity=".07"/><stop offset="1" stop-color="#7DFCC3" stop-opacity="0"/></radialGradient>
+    <style>
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+      .ring { stroke:#7DFCC3; stroke-opacity:.26; fill:none; } .node { fill:#0B1511; stroke:#7DFCC3; stroke-opacity:.82; }
+      .sweep { transform-origin:360px 190px; animation: spin 4.8s linear infinite; }
+      .orbit { transform-origin:360px 190px; animation: spin 18s linear infinite; } .orbit2 { transform-origin:360px 190px; animation: spin 27s linear infinite reverse; }
+      .pulse { animation:pulse 2s ease-in-out infinite; } .dash { stroke-dasharray:5 10; animation: dash 12s linear infinite; }
+      @keyframes spin { to { transform: rotate(360deg); } } @keyframes pulse { 0%,100% { opacity:.45; } 50% { opacity:1; } } @keyframes dash { to { stroke-dashoffset:-160; } }
+    </style>
+  </defs>
+  <rect width="720" height="380" rx="18" fill="#050706"/><rect x="18" y="18" width="684" height="344" rx="14" fill="#07110D" stroke="#7DFCC3" stroke-opacity=".32"/>
+  <circle cx="360" cy="190" r="158" fill="url(#fade)"/><circle cx="360" cy="190" r="42" class="ring"/><circle cx="360" cy="190" r="82" class="ring"/><circle cx="360" cy="190" r="122" class="ring"/><circle cx="360" cy="190" r="158" class="ring dash"/>
+  <line x1="202" y1="190" x2="518" y2="190" stroke="#7DFCC3" stroke-opacity=".2"/><line x1="360" y1="32" x2="360" y2="348" stroke="#7DFCC3" stroke-opacity=".2"/>
+  <path class="sweep" d="M360 190 L360 32 A158 158 0 0 1 497 111 Z" fill="#7DFCC3" opacity=".20"/>
+  <g class="orbit"><circle cx="482" cy="190" r="4" fill="#FFCF5A"/><circle cx="238" cy="190" r="3" fill="#FFCF5A"/></g><g class="orbit2"><circle cx="360" cy="68" r="4" fill="#FF5A3D"/><circle cx="360" cy="312" r="3" fill="#FF5A3D"/></g>
+  <g class="mono" font-size="12" fill="#DFFFF0">
+    <text x="36" y="50" fill="#7DFCC3" letter-spacing="2">SIGNAL MAP // ACTIVE LOCKS</text>
+    <circle cx="286" cy="136" r="8" class="node pulse"/><text x="218" y="124">agents</text>
+    <circle cx="472" cy="150" r="8" class="node pulse"/><text x="490" y="154">devtools</text>
+    <circle cx="410" cy="264" r="8" class="node pulse"/><text x="428" y="269">systems</text>
+    <circle cx="238" cy="238" r="8" class="node pulse"/><text x="152" y="243">astronomy</text>
+    <circle cx="350" cy="190" r="7" fill="#F4FFF8"/><text x="374" y="195" fill="#7DFCC3">shreyaas5</text>
+    <text x="36" y="332" fill="#7C9B8D">tracking ideas that turn into shipped experiments</text>
+  </g>
+</svg>
