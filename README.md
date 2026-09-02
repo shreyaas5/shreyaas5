@@ -38,6 +38,10 @@
   </tr>
 </table>
 
+<p align="center">
+  <img src="./assets/signal-strip.svg" alt="Animated transmission strip" width="100%" />
+</p>
+
 ## current trajectory
 
 ```txt
