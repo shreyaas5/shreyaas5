@@ -1,11 +1,11 @@
 <p align="center">
-  <img src="./assets/mission-control.svg" alt="Mission Control // Shreyaas profile banner" width="100%" />
+  <img src="./assets/mission-control.svg" alt="BuilderDex // shreyaas5 profile banner" width="100%" />
 </p>
 
-<h1 align="center">mission control // shreyaas sachdeva</h1>
+<h1 align="center">BuilderDex // shreyaas5</h1>
 
 <p align="center">
-  <strong>Computer Science student building autonomous agents, developer tools, and space-flavored systems.</strong>
+  <strong>Computer Science student building AI agents, developer tools, and web experiments.</strong>
 </p>
 
 <p align="center">
@@ -18,46 +18,46 @@
 
 ```txt
 ╔════════════════════════════════════════════════════════════════╗
-║ SHREYAAS_OS                                                   ║
+║ BUILDERDEX ENTRY #0005                                        ║
 ╠════════════════════════════════════════════════════════════════╣
 ║ status        online                                          ║
 ║ role          computer science engineer in training            ║
-║ mission       make AI systems less annoying and more useful    ║
-║ coordinates   agents / systems / space / developer tooling     ║
+║ mode          build first, decorate second                     ║
+║ coordinates   agents / devtools / web experiments / CS basics  ║
 ╚════════════════════════════════════════════════════════════════╝
 ```
 
 <table>
   <tr>
     <td width="50%">
-      <img src="./assets/mission-radar.svg" alt="Animated radar of current engineering interests" width="100%" />
+      <img src="./assets/mission-radar.svg" alt="BuilderDex index grid" width="100%" />
     </td>
     <td width="50%">
-      <img src="./assets/stack-console.svg" alt="Terminal console with current engineering stack" width="100%" />
+      <img src="./assets/stack-console.svg" alt="BuilderDex terminal console" width="100%" />
     </td>
   </tr>
 </table>
 
 <p align="center">
-  <img src="./assets/signal-strip.svg" alt="Animated transmission strip" width="100%" />
+  <img src="./assets/signal-strip.svg" alt="GitHub themed BuilderDex status strip" width="100%" />
 </p>
 
-## current trajectory
+## current build lanes
 
 ```txt
-AUTONOMOUS AGENTS      ████████████████░░░░  80%
-MULTI-AGENT SYSTEMS    ██████████████░░░░░░  70%
-SYSTEMS THINKING       ████████████░░░░░░░░  60%
-SPACE + ASTRONOMY      █████████████████░░░  85%
+AI AGENTS             experiments in automation and agent workflows
+DEVELOPER TOOLS       small utilities that make building less annoying
+WEB EXPERIMENTS       interfaces, dashboards, and visual systems
+CS FUNDAMENTALS       algorithms, structure, and systems thinking
 ```
 
-## featured missions
+## repo slots
 
 | mission | signal | status |
 |---|---|---|
-| `autonomous-multi-agent-system` | agents coordinating work with less human babysitting | in development |
-| `developer-tools-lab` | small utilities that remove repetitive engineering friction | prototyping |
-| `space-systems-archive` | astronomy notes, simulations, and visual experiments | exploring |
+| `agent-lab` | experiments with AI agents and automation | building |
+| `devtools-lab` | utilities, scripts, and workflow upgrades | building |
+| `web-ui-lab` | interfaces with actual polish | building |
 
 ## operating stack
 
@@ -75,7 +75,7 @@ SPACE + ASTRONOMY      █████████████████░░
 > building systems that do real work
 > learning by shipping projects, not collecting badges
 > turning curiosity into repos with a pulse
-> next objective: make the profile itself a living artifact
+> next objective: replace every placeholder with a real shipped repo
 ```
 
 <p align="center">

@@ -1,30 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="720" height="380" viewBox="0 0 720 380" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">Animated mission radar</title>
-  <desc id="desc">A radar interface showing active engineering signals.</desc>
-  <defs>
-    <radialGradient id="fade" cx="50%" cy="50%" r="50%"><stop stop-color="#7DFCC3" stop-opacity=".26"/><stop offset=".58" stop-color="#7DFCC3" stop-opacity=".07"/><stop offset="1" stop-color="#7DFCC3" stop-opacity="0"/></radialGradient>
-    <style>
-      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
-      .ring { stroke:#7DFCC3; stroke-opacity:.26; fill:none; } .node { fill:#0B1511; stroke:#7DFCC3; stroke-opacity:.82; }
-      .sweep { transform-origin:360px 190px; animation: spin 4.8s linear infinite; }
-      .orbit { transform-origin:360px 190px; animation: spin 18s linear infinite; } .orbit2 { transform-origin:360px 190px; animation: spin 27s linear infinite reverse; }
-      .pulse { animation:pulse 2s ease-in-out infinite; } .dash { stroke-dasharray:5 10; animation: dash 12s linear infinite; }
-      @keyframes spin { to { transform: rotate(360deg); } } @keyframes pulse { 0%,100% { opacity:.45; } 50% { opacity:1; } } @keyframes dash { to { stroke-dashoffset:-160; } }
-    </style>
-  </defs>
-  <rect width="720" height="380" rx="18" fill="#050706"/><rect x="18" y="18" width="684" height="344" rx="14" fill="#07110D" stroke="#7DFCC3" stroke-opacity=".32"/>
-  <circle cx="360" cy="190" r="158" fill="url(#fade)"/><circle cx="360" cy="190" r="42" class="ring"/><circle cx="360" cy="190" r="82" class="ring"/><circle cx="360" cy="190" r="122" class="ring"/><circle cx="360" cy="190" r="158" class="ring dash"/>
-  <line x1="202" y1="190" x2="518" y2="190" stroke="#7DFCC3" stroke-opacity=".2"/><line x1="360" y1="32" x2="360" y2="348" stroke="#7DFCC3" stroke-opacity=".2"/>
-  <path class="sweep" d="M360 190 L360 32 A158 158 0 0 1 497 111 Z" fill="#7DFCC3" opacity=".20"/>
-  <g class="orbit"><circle cx="482" cy="190" r="4" fill="#FFCF5A"/><circle cx="238" cy="190" r="3" fill="#FFCF5A"/></g><g class="orbit2"><circle cx="360" cy="68" r="4" fill="#FF5A3D"/><circle cx="360" cy="312" r="3" fill="#FF5A3D"/></g>
-  <g class="mono" font-size="12" fill="#DFFFF0">
-    <text x="36" y="50" fill="#7DFCC3" letter-spacing="2">SIGNAL MAP // ACTIVE LOCKS</text>
-    <circle cx="286" cy="136" r="8" class="node pulse"/><text x="218" y="124">agents</text>
-    <circle cx="472" cy="150" r="8" class="node pulse"/><text x="490" y="154">devtools</text>
-    <circle cx="410" cy="264" r="8" class="node pulse"/><text x="428" y="269">systems</text>
-    <circle cx="238" cy="238" r="8" class="node pulse"/><text x="152" y="243">astronomy</text>
-    <circle cx="350" cy="190" r="7" fill="#F4FFF8"/><text x="374" y="195" fill="#7DFCC3">shreyaas5</text>
-    <text x="36" y="332" fill="#7C9B8D">tracking ideas that turn into shipped experiments</text>
+  <title id="title">BuilderDex index grid</title>
+  <desc id="desc">A GitHub themed index of current build categories.</desc>
+  <defs><style>
+  .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+  .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  .bg { fill: #0d1117; }
+  .panel { fill: #161b22; stroke: #30363d; }
+  .panel2 { fill: #0d1117; stroke: #30363d; }
+  .text { fill: #f0f6fc; }
+  .muted { fill: #8b949e; }
+  .green { fill: #3fb950; }
+  .blue { fill: #58a6ff; }
+  .orange { fill: #d29922; }
+  .purple { fill: #bc8cff; }
+  .red { fill: #f85149; }
+  .line { stroke: #30363d; }
+  .pulse { animation: pulse 2.4s ease-in-out infinite; }
+  .blink { animation: blink 1s steps(2,start) infinite; }
+  .scan { animation: scan 4.5s linear infinite; }
+  .float { animation: float 5s ease-in-out infinite alternate; }
+  .type1 { animation: reveal1 7s steps(38) infinite; }
+  .type2 { animation: reveal2 7s steps(42) infinite; }
+  .type3 { animation: reveal3 7s steps(36) infinite; }
+  @keyframes pulse { 0%, 100% { opacity: .45; } 50% { opacity: 1; } }
+  @keyframes blink { 0%, 48% { opacity: 1; } 49%, 100% { opacity: 0; } }
+  @keyframes scan { from { transform: translateX(-220px); } to { transform: translateX(1220px); } }
+  @keyframes float { from { transform: translateY(-6px); } to { transform: translateY(6px); } }
+  @keyframes reveal1 { 0%, 8% { clip-path: inset(0 100% 0 0); } 28%, 100% { clip-path: inset(0 0 0 0); } }
+  @keyframes reveal2 { 0%, 34% { clip-path: inset(0 100% 0 0); } 58%, 100% { clip-path: inset(0 0 0 0); } }
+  @keyframes reveal3 { 0%, 62% { clip-path: inset(0 100% 0 0); } 88%, 100% { clip-path: inset(0 0 0 0); } }
+</style></defs>
+  <rect width="720" height="380" rx="18" class="bg"/>
+  <rect x="22" y="22" width="676" height="336" rx="14" class="panel"/>
+  <g class="mono">
+    <text x="48" y="62" font-size="14" letter-spacing="2" class="blue">INDEX GRID</text>
+    <text x="48" y="96" font-size="24" font-weight="800" class="text">what I am actually building around</text>
+  </g>
+  <g class="sans">
+    <rect x="48" y="126" width="284" height="72" rx="10" class="panel2"/>
+    <circle cx="78" cy="162" r="8" class="green pulse"/><text x="100" y="158" font-size="16" font-weight="700" class="text">AI agents</text><text x="100" y="180" font-size="13" class="muted">coordination, automation, workflows</text>
+    <rect x="388" y="126" width="284" height="72" rx="10" class="panel2"/>
+    <circle cx="418" cy="162" r="8" class="blue pulse"/><text x="440" y="158" font-size="16" font-weight="700" class="text">Developer tools</text><text x="440" y="180" font-size="13" class="muted">small utilities, better feedback loops</text>
+    <rect x="48" y="222" width="284" height="72" rx="10" class="panel2"/>
+    <circle cx="78" cy="258" r="8" class="purple pulse"/><text x="100" y="254" font-size="16" font-weight="700" class="text">Web experiments</text><text x="100" y="276" font-size="13" class="muted">interfaces, dashboards, visual polish</text>
+    <rect x="388" y="222" width="284" height="72" rx="10" class="panel2"/>
+    <circle cx="418" cy="258" r="8" class="orange pulse"/><text x="440" y="254" font-size="16" font-weight="700" class="text">CS fundamentals</text><text x="440" y="276" font-size="13" class="muted">systems thinking, algorithms, structure</text>
   </g>
 </svg>
