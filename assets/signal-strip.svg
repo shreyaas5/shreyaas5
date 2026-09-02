@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="1200" height="120" viewBox="0 0 1200 120" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">GitHub themed BuilderDex strip</title>
-  <desc id="desc">An animated status strip using GitHub colors.</desc>
+<svg width="1200" height="128" viewBox="0 0 1200 128" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">GitDex status strip</title>
+  <desc id="desc">A GitHub themed Dex-style status strip.</desc>
   <defs><style>
   .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
   .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-  .bg { fill: #0d1117; }
-  .panel { fill: #161b22; stroke: #30363d; }
-  .panel2 { fill: #0d1117; stroke: #30363d; }
+  .github-bg { fill: #0d1117; }
+  .dex-shell { fill: #161b22; stroke: #30363d; }
+  .screen { fill: #010409; stroke: #30363d; }
+  .screen-line { stroke: #21262d; }
   .text { fill: #f0f6fc; }
   .muted { fill: #8b949e; }
   .green { fill: #3fb950; }
@@ -15,30 +16,29 @@
   .orange { fill: #d29922; }
   .purple { fill: #bc8cff; }
   .red { fill: #f85149; }
-  .line { stroke: #30363d; }
-  .pulse { animation: pulse 2.4s ease-in-out infinite; }
+  .chip { fill: #21262d; stroke: #30363d; }
   .blink { animation: blink 1s steps(2,start) infinite; }
-  .scan { animation: scan 4.5s linear infinite; }
+  .pulse { animation: pulse 2.2s ease-in-out infinite; }
+  .scan { animation: scan 4.8s linear infinite; }
   .float { animation: float 5s ease-in-out infinite alternate; }
-  .type1 { animation: reveal1 7s steps(38) infinite; }
-  .type2 { animation: reveal2 7s steps(42) infinite; }
-  .type3 { animation: reveal3 7s steps(36) infinite; }
-  @keyframes pulse { 0%, 100% { opacity: .45; } 50% { opacity: 1; } }
-  @keyframes blink { 0%, 48% { opacity: 1; } 49%, 100% { opacity: 0; } }
-  @keyframes scan { from { transform: translateX(-220px); } to { transform: translateX(1220px); } }
-  @keyframes float { from { transform: translateY(-6px); } to { transform: translateY(6px); } }
-  @keyframes reveal1 { 0%, 8% { clip-path: inset(0 100% 0 0); } 28%, 100% { clip-path: inset(0 0 0 0); } }
+  .type1 { animation: reveal1 7s steps(34) infinite; }
+  .type2 { animation: reveal2 7s steps(36) infinite; }
+  .type3 { animation: reveal3 7s steps(32) infinite; }
+  @keyframes blink { 0%,48% { opacity: 1; } 49%,100% { opacity: 0; } }
+  @keyframes pulse { 0%,100% { opacity: .48; } 50% { opacity: 1; } }
+  @keyframes scan { from { transform: translateY(-330px); } to { transform: translateY(330px); } }
+  @keyframes float { from { transform: translateY(-5px); } to { transform: translateY(6px); } }
+  @keyframes reveal1 { 0%, 8% { clip-path: inset(0 100% 0 0); } 30%, 100% { clip-path: inset(0 0 0 0); } }
   @keyframes reveal2 { 0%, 34% { clip-path: inset(0 100% 0 0); } 58%, 100% { clip-path: inset(0 0 0 0); } }
   @keyframes reveal3 { 0%, 62% { clip-path: inset(0 100% 0 0); } 88%, 100% { clip-path: inset(0 0 0 0); } }
 </style></defs>
-  <rect width="1200" height="120" rx="16" class="bg"/>
-  <rect x="18" y="18" width="1164" height="84" rx="10" class="panel"/>
-  <rect class="scan" y="49" width="190" height="22" fill="#58a6ff" opacity=".14"/>
+  <rect width="1200" height="128" rx="18" class="github-bg"/>
+  <rect x="22" y="22" width="1156" height="84" rx="18" class="dex-shell"/>
+  <rect x="44" y="42" width="86" height="44" rx="22" fill="#238636"/><text x="64" y="70" font-size="15" font-weight="900" class="sans text">LIVE</text>
+  <rect class="scan" x="164" y="34" width="180" height="60" fill="#58a6ff" opacity=".12"/>
   <g class="mono" font-size="15">
-    <text x="44" y="48" class="blue">BUILDERDEX LINK</text>
-    <text x="210" y="48" class="muted">github.com/shreyaas5</text>
-    <text x="44" y="82" class="text">AI agents // developer tools // web experiments // CS fundamentals // real projects only</text>
-    <circle cx="1118" cy="60" r="7" class="green blink"/>
-    <text x="1138" y="65" class="green">LIVE</text>
+    <text x="164" y="56" class="blue">GITDEX://github.com/shreyaas5</text>
+    <text x="164" y="84" class="text">AI agents / developer tools / web experiments / CS fundamentals / no fake entries</text>
+    <circle cx="1128" cy="64" r="8" class="green blink"/>
   </g>
 </svg>

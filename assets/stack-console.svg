@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="720" height="380" viewBox="0 0 720 380" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">BuilderDex terminal</title>
-  <desc id="desc">A GitHub themed terminal card with current stack and profile commands.</desc>
+  <title id="title">GitDex terminal screen</title>
+  <desc id="desc">A Dex-style terminal screen with stack and profile commands.</desc>
   <defs><style>
   .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
   .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-  .bg { fill: #0d1117; }
-  .panel { fill: #161b22; stroke: #30363d; }
-  .panel2 { fill: #0d1117; stroke: #30363d; }
+  .github-bg { fill: #0d1117; }
+  .dex-shell { fill: #161b22; stroke: #30363d; }
+  .screen { fill: #010409; stroke: #30363d; }
+  .screen-line { stroke: #21262d; }
   .text { fill: #f0f6fc; }
   .muted { fill: #8b949e; }
   .green { fill: #3fb950; }
@@ -15,35 +16,34 @@
   .orange { fill: #d29922; }
   .purple { fill: #bc8cff; }
   .red { fill: #f85149; }
-  .line { stroke: #30363d; }
-  .pulse { animation: pulse 2.4s ease-in-out infinite; }
+  .chip { fill: #21262d; stroke: #30363d; }
   .blink { animation: blink 1s steps(2,start) infinite; }
-  .scan { animation: scan 4.5s linear infinite; }
+  .pulse { animation: pulse 2.2s ease-in-out infinite; }
+  .scan { animation: scan 4.8s linear infinite; }
   .float { animation: float 5s ease-in-out infinite alternate; }
-  .type1 { animation: reveal1 7s steps(38) infinite; }
-  .type2 { animation: reveal2 7s steps(42) infinite; }
-  .type3 { animation: reveal3 7s steps(36) infinite; }
-  @keyframes pulse { 0%, 100% { opacity: .45; } 50% { opacity: 1; } }
-  @keyframes blink { 0%, 48% { opacity: 1; } 49%, 100% { opacity: 0; } }
-  @keyframes scan { from { transform: translateX(-220px); } to { transform: translateX(1220px); } }
-  @keyframes float { from { transform: translateY(-6px); } to { transform: translateY(6px); } }
-  @keyframes reveal1 { 0%, 8% { clip-path: inset(0 100% 0 0); } 28%, 100% { clip-path: inset(0 0 0 0); } }
+  .type1 { animation: reveal1 7s steps(34) infinite; }
+  .type2 { animation: reveal2 7s steps(36) infinite; }
+  .type3 { animation: reveal3 7s steps(32) infinite; }
+  @keyframes blink { 0%,48% { opacity: 1; } 49%,100% { opacity: 0; } }
+  @keyframes pulse { 0%,100% { opacity: .48; } 50% { opacity: 1; } }
+  @keyframes scan { from { transform: translateY(-330px); } to { transform: translateY(330px); } }
+  @keyframes float { from { transform: translateY(-5px); } to { transform: translateY(6px); } }
+  @keyframes reveal1 { 0%, 8% { clip-path: inset(0 100% 0 0); } 30%, 100% { clip-path: inset(0 0 0 0); } }
   @keyframes reveal2 { 0%, 34% { clip-path: inset(0 100% 0 0); } 58%, 100% { clip-path: inset(0 0 0 0); } }
   @keyframes reveal3 { 0%, 62% { clip-path: inset(0 100% 0 0); } 88%, 100% { clip-path: inset(0 0 0 0); } }
 </style></defs>
-  <rect width="720" height="380" rx="18" class="bg"/>
-  <rect x="22" y="22" width="676" height="336" rx="14" class="panel"/>
-  <circle cx="50" cy="48" r="6" class="red"/><circle cx="72" cy="48" r="6" class="orange"/><circle cx="94" cy="48" r="6" class="green"/>
+  <rect width="720" height="380" rx="18" class="github-bg"/>
+  <rect x="22" y="22" width="676" height="336" rx="18" class="dex-shell"/>
+  <rect x="48" y="58" width="624" height="256" rx="14" class="screen"/>
+  <circle cx="76" cy="342" r="10" class="blue pulse"/><circle cx="112" cy="342" r="10" class="red"/><circle cx="148" cy="342" r="10" class="green"/>
   <g class="mono">
-    <text x="48" y="90" font-size="15" class="blue">$ npx builderdex inspect shreyaas5</text>
-    <text x="48" y="132" font-size="15" class="text type1">&gt; languages: python / c++ / javascript</text>
-    <text x="48" y="168" font-size="15" class="text type2">&gt; frontend: react / clean UI / useful demos</text>
-    <text x="48" y="204" font-size="15" class="text type3">&gt; workflow: github actions / readmes / automation</text>
-    <line x1="48" y1="238" x2="650" y2="238" class="line"/>
-    <text x="48" y="280" font-size="14" class="muted">next unlock:</text>
-    <text x="160" y="280" font-size="14" class="green">replace placeholders with real pinned repos</text>
-    <text x="48" y="320" font-size="14" class="muted">mode:</text>
-    <text x="100" y="320" font-size="14" class="purple">build first, decorate second</text>
-    <rect x="326" y="302" width="12" height="23" class="green blink"/>
+    <text x="76" y="96" font-size="15" class="blue">$ gitdex scan shreyaas5</text>
+    <text x="76" y="140" font-size="15" class="text type1">&gt; languages: python / c++ / javascript</text>
+    <text x="76" y="178" font-size="15" class="text type2">&gt; building: agents / tools / web demos</text>
+    <text x="76" y="216" font-size="15" class="text type3">&gt; rule: no filler, only repos that earn a slot</text>
+    <line x1="76" y1="246" x2="620" y2="246" class="screen-line"/>
+    <text x="76" y="282" font-size="14" class="muted">next evolution:</text>
+    <text x="212" y="282" font-size="14" class="green">pin real projects and link them here</text>
+    <rect x="514" y="263" width="12" height="23" class="green blink"/>
   </g>
 </svg>

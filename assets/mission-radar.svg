@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="720" height="380" viewBox="0 0 720 380" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">BuilderDex index grid</title>
-  <desc id="desc">A GitHub themed index of current build categories.</desc>
+  <title id="title">GitDex type cards</title>
+  <desc id="desc">Dex-style type cards for current GitHub profile build categories.</desc>
   <defs><style>
   .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
   .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-  .bg { fill: #0d1117; }
-  .panel { fill: #161b22; stroke: #30363d; }
-  .panel2 { fill: #0d1117; stroke: #30363d; }
+  .github-bg { fill: #0d1117; }
+  .dex-shell { fill: #161b22; stroke: #30363d; }
+  .screen { fill: #010409; stroke: #30363d; }
+  .screen-line { stroke: #21262d; }
   .text { fill: #f0f6fc; }
   .muted { fill: #8b949e; }
   .green { fill: #3fb950; }
@@ -15,36 +16,40 @@
   .orange { fill: #d29922; }
   .purple { fill: #bc8cff; }
   .red { fill: #f85149; }
-  .line { stroke: #30363d; }
-  .pulse { animation: pulse 2.4s ease-in-out infinite; }
+  .chip { fill: #21262d; stroke: #30363d; }
   .blink { animation: blink 1s steps(2,start) infinite; }
-  .scan { animation: scan 4.5s linear infinite; }
+  .pulse { animation: pulse 2.2s ease-in-out infinite; }
+  .scan { animation: scan 4.8s linear infinite; }
   .float { animation: float 5s ease-in-out infinite alternate; }
-  .type1 { animation: reveal1 7s steps(38) infinite; }
-  .type2 { animation: reveal2 7s steps(42) infinite; }
-  .type3 { animation: reveal3 7s steps(36) infinite; }
-  @keyframes pulse { 0%, 100% { opacity: .45; } 50% { opacity: 1; } }
-  @keyframes blink { 0%, 48% { opacity: 1; } 49%, 100% { opacity: 0; } }
-  @keyframes scan { from { transform: translateX(-220px); } to { transform: translateX(1220px); } }
-  @keyframes float { from { transform: translateY(-6px); } to { transform: translateY(6px); } }
-  @keyframes reveal1 { 0%, 8% { clip-path: inset(0 100% 0 0); } 28%, 100% { clip-path: inset(0 0 0 0); } }
+  .type1 { animation: reveal1 7s steps(34) infinite; }
+  .type2 { animation: reveal2 7s steps(36) infinite; }
+  .type3 { animation: reveal3 7s steps(32) infinite; }
+  @keyframes blink { 0%,48% { opacity: 1; } 49%,100% { opacity: 0; } }
+  @keyframes pulse { 0%,100% { opacity: .48; } 50% { opacity: 1; } }
+  @keyframes scan { from { transform: translateY(-330px); } to { transform: translateY(330px); } }
+  @keyframes float { from { transform: translateY(-5px); } to { transform: translateY(6px); } }
+  @keyframes reveal1 { 0%, 8% { clip-path: inset(0 100% 0 0); } 30%, 100% { clip-path: inset(0 0 0 0); } }
   @keyframes reveal2 { 0%, 34% { clip-path: inset(0 100% 0 0); } 58%, 100% { clip-path: inset(0 0 0 0); } }
   @keyframes reveal3 { 0%, 62% { clip-path: inset(0 100% 0 0); } 88%, 100% { clip-path: inset(0 0 0 0); } }
 </style></defs>
-  <rect width="720" height="380" rx="18" class="bg"/>
-  <rect x="22" y="22" width="676" height="336" rx="14" class="panel"/>
+  <rect width="720" height="380" rx="18" class="github-bg"/>
+  <rect x="22" y="22" width="676" height="336" rx="18" class="dex-shell"/>
   <g class="mono">
-    <text x="48" y="62" font-size="14" letter-spacing="2" class="blue">INDEX GRID</text>
-    <text x="48" y="96" font-size="24" font-weight="800" class="text">what I am actually building around</text>
+    <text x="48" y="62" font-size="14" letter-spacing="2" class="blue">GITDEX TYPES</text>
+    <text x="48" y="98" font-size="26" font-weight="900" class="text">current build categories</text>
   </g>
   <g class="sans">
-    <rect x="48" y="126" width="284" height="72" rx="10" class="panel2"/>
-    <circle cx="78" cy="162" r="8" class="green pulse"/><text x="100" y="158" font-size="16" font-weight="700" class="text">AI agents</text><text x="100" y="180" font-size="13" class="muted">coordination, automation, workflows</text>
-    <rect x="388" y="126" width="284" height="72" rx="10" class="panel2"/>
-    <circle cx="418" cy="162" r="8" class="blue pulse"/><text x="440" y="158" font-size="16" font-weight="700" class="text">Developer tools</text><text x="440" y="180" font-size="13" class="muted">small utilities, better feedback loops</text>
-    <rect x="48" y="222" width="284" height="72" rx="10" class="panel2"/>
-    <circle cx="78" cy="258" r="8" class="purple pulse"/><text x="100" y="254" font-size="16" font-weight="700" class="text">Web experiments</text><text x="100" y="276" font-size="13" class="muted">interfaces, dashboards, visual polish</text>
-    <rect x="388" y="222" width="284" height="72" rx="10" class="panel2"/>
-    <circle cx="418" cy="258" r="8" class="orange pulse"/><text x="440" y="254" font-size="16" font-weight="700" class="text">CS fundamentals</text><text x="440" y="276" font-size="13" class="muted">systems thinking, algorithms, structure</text>
+    <rect x="48" y="126" width="284" height="76" rx="14" class="screen"/>
+    <rect x="70" y="148" width="74" height="32" rx="16" fill="#238636"/><text x="92" y="169" font-size="13" font-weight="800" class="text">AI</text>
+    <text x="162" y="156" font-size="16" font-weight="800" class="text">Agents</text><text x="162" y="180" font-size="13" class="muted">automation and workflows</text>
+    <rect x="388" y="126" width="284" height="76" rx="14" class="screen"/>
+    <rect x="410" y="148" width="92" height="32" rx="16" fill="#1f6feb"/><text x="430" y="169" font-size="13" font-weight="800" class="text">TOOL</text>
+    <text x="520" y="156" font-size="16" font-weight="800" class="text">Devtools</text><text x="520" y="180" font-size="13" class="muted">scripts and utilities</text>
+    <rect x="48" y="230" width="284" height="76" rx="14" class="screen"/>
+    <rect x="70" y="252" width="90" height="32" rx="16" fill="#8957e5"/><text x="94" y="273" font-size="13" font-weight="800" class="text">WEB</text>
+    <text x="178" y="260" font-size="16" font-weight="800" class="text">Interfaces</text><text x="178" y="284" font-size="13" class="muted">clean UI and demos</text>
+    <rect x="388" y="230" width="284" height="76" rx="14" class="screen"/>
+    <rect x="410" y="252" width="82" height="32" rx="16" fill="#d29922"/><text x="431" y="273" font-size="13" font-weight="800" class="text">CORE</text>
+    <text x="512" y="260" font-size="16" font-weight="800" class="text">CS basics</text><text x="512" y="284" font-size="13" class="muted">structure and systems</text>
   </g>
 </svg>

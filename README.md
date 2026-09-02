@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="./assets/mission-control.svg" alt="BuilderDex // shreyaas5 profile banner" width="100%" />
+  <img src="./assets/mission-control.svg" alt="GitDex // shreyaas5 profile banner" width="100%" />
 </p>
 
-<h1 align="center">BuilderDex // shreyaas5</h1>
+<h1 align="center">GitDex // shreyaas5</h1>
 
 <p align="center">
   <strong>Computer Science student building AI agents, developer tools, and web experiments.</strong>
@@ -18,7 +18,7 @@
 
 ```txt
 ╔════════════════════════════════════════════════════════════════╗
-║ BUILDERDEX ENTRY #0005                                        ║
+║ GITDEX ENTRY #0005                                            ║
 ╠════════════════════════════════════════════════════════════════╣
 ║ status        online                                          ║
 ║ role          computer science engineer in training            ║
@@ -30,16 +30,16 @@
 <table>
   <tr>
     <td width="50%">
-      <img src="./assets/mission-radar.svg" alt="BuilderDex index grid" width="100%" />
+      <img src="./assets/mission-radar.svg" alt="GitDex type cards" width="100%" />
     </td>
     <td width="50%">
-      <img src="./assets/stack-console.svg" alt="BuilderDex terminal console" width="100%" />
+      <img src="./assets/stack-console.svg" alt="GitDex terminal console" width="100%" />
     </td>
   </tr>
 </table>
 
 <p align="center">
-  <img src="./assets/signal-strip.svg" alt="GitHub themed BuilderDex status strip" width="100%" />
+  <img src="./assets/signal-strip.svg" alt="GitHub themed GitDex status strip" width="100%" />
 </p>
 
 ## current build lanes
