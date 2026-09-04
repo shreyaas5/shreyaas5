@@ -62,7 +62,7 @@
     <rect x="56" y="276" width="448" height="94" rx="10" class="panel"/>
     <text x="78" y="310" font-size="15" class="green">CLASSIFIED BUILD CHANNEL</text>
     <text x="78" y="338" font-size="14" class="muted">agents | devtools | simulations | automation</text>
-    <text x="78" y="362" font-size="14" class="muted">asset build: 2026-09-03 07:09 UTC</text>
+    <text x="78" y="362" font-size="14" class="muted">asset build: 2026-09-04 07:13 UTC</text>
     <rect x="455" y="335" width="12" height="22" fill="#7DFCC3" class="blink"/>
   </g>
   <g class="mono" transform="translate(558 54)">
